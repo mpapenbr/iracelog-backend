@@ -1,0 +1,30 @@
+spring:
+  data:
+    mongodb:
+      host: host.docker.internal
+      username: see application-secrets.yml
+      password: see application-secrets.yml
+      database: see application-secrets.yml
+      authentication-database: see application-secrets.yml
+  
+  # security:
+  #   user:
+  #     name: user
+  #     password: "{noop}password"
+
+logging:
+  level:
+    de.mp.iracelog.server: debug
+    org.springframework.data: info      
+    org.springframework.security.authentication: debug
+    org.springframework.security: debug
+
+
+istint:
+  cors:
+    allowedOrigins: 
+      - '*'
+    allowCredentials: false
+  
+
+
